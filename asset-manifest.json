@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pos-recipe-app/static/css/main.90387bea.css",
+    "main.js": "/pos-recipe-app/static/js/main.a564d9a7.js",
+    "static/js/453.6a12ce56.chunk.js": "/pos-recipe-app/static/js/453.6a12ce56.chunk.js",
+    "index.html": "/pos-recipe-app/index.html",
+    "main.90387bea.css.map": "/pos-recipe-app/static/css/main.90387bea.css.map",
+    "main.a564d9a7.js.map": "/pos-recipe-app/static/js/main.a564d9a7.js.map",
+    "453.6a12ce56.chunk.js.map": "/pos-recipe-app/static/js/453.6a12ce56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90387bea.css",
+    "static/js/main.a564d9a7.js"
+  ]
+}
