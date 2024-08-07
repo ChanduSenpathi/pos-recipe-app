@@ -1,0 +1,58 @@
+.orders_total_discount{
+    font-size: 30px;
+    color: #D89F65;
+}
+.add_tip {
+    font-size: 16px;
+}
+.orders_common_btn_style, .orders_common_icons_style {
+    font-size: 20px;
+    background-color: #EAF0F0;
+    color: #0F2125;
+    border: none;
+}
+.orders_common_btn_style:hover, .orders_common_icons_style:hover {
+    background-color: #EAF0F0;
+    color: #0F2125;
+}
+.orders_common_disabled {
+    background-color: #FAFAFA;
+    pointer-events: none;
+    color: rgb(0, 0, 0, 0.5);
+}
+.orders_common_icons_style {
+    font-size: 16px;
+}
+.add_cash_received_bg {
+    background-color: #ECF3F5;
+    font-size: 16px;
+}
+.add_cash_received_bg > h2 {
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+.orders_bottom_style {
+    font-size: 15px;
+}
+.orders_total_amount {
+    font-size: 30px;
+}
+.pay_now_orders_btn{
+    font-size: 23px;
+    letter-spacing: 3px;
+    background-color: #8BB5BE;
+    color: #060D0F;
+    border: none;
+}
+
+.pay_now_orders_btn:hover{
+    background-color: #8BB5BE;
+    color: #060D0F;
+}
+
+@media screen and (max-width: 768px) {
+    .responsive_style {
+        margin-left: 82px;
+        width: 100%;
+    }
+}

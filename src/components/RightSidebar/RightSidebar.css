@@ -1,0 +1,81 @@
+.rightbar_orders {
+    color: #2C3832;
+    font-size: 30px;
+}
+.right_sidebar_container {
+    position: fixed;
+    right: 0;
+    height: 86%;
+}
+.order_items_height {
+    height: 60vh;
+    overflow: scroll;
+}
+.guess_table_col {
+    color: #2C3832;
+    font-size: 12px;
+}
+.guess_span {
+    text-shadow: 0px 1px 3px #2C3832;
+}
+.sub_guess_table_col{
+    color: #D89F65;
+}
+.border_bottom_dotted {
+    border-bottom: 1px black dotted;
+}
+
+.right_sidebar_footer_con {
+    background-color: #EAF0F0;
+}
+.cancel_order_btn, .send_order_btn {
+    color: #060D0F;
+    font-size: 16px;
+    max-width: 160px;
+    height: 58px;
+    background-color: #EC5A5A;
+    padding: 19px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.send_order_btn {
+    background-color: #B1CED4;
+}
+
+.cancel_order_btn:hover {
+    color: #060D0F;
+    background-color: #EC5A5A;
+}
+
+.send_order_btn:hover {
+    color: #060D0F;
+    background-color: #B1CED4;
+}
+.order_list_items {
+    background-color: #B1CED4;
+    border-radius: 10px;
+}
+.order_items_image {
+    width: 65px;
+    height: 63px;
+}
+.order_subtotal_text {
+    font-size: 14px;
+    color: #000000;
+}
+ @media screen and (max-width: 768px) {
+    .right_sidebar_container {
+        position: static !important;
+        margin-left: 82px;
+        width: 100%;
+    }
+    .rightbar_orders {
+        font-size: 20px;
+    }
+    .cancel_order_btn, .send_order_btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+ }

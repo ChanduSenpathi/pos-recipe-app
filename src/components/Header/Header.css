@@ -1,0 +1,60 @@
+.z_index_50 {
+    z-index: 10000;
+}
+.header_logo_name > span:first-child {
+    font: bold 45px 'Quicksand';
+    color: #3D8493;
+}
+
+.header_logo_name > span:nth-child(2) {
+    font: bold 45px 'Quicksand';
+    color: salmon;
+}
+
+.header_logo_name > span:last-child{
+    font: bold 45px 'Quicksand';
+    color: green;
+}
+.searchbar_input_field {
+    max-width: 357px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #ECF3F5;
+    outline: 1px solid black;
+    border: 0px;
+    box-shadow: 0px 3px 3px #89928E;
+    font-size: 15px;
+    overflow: hidden;
+}
+.searchbar_input_field > input {
+    padding: 18px 35px 18px 15px;
+    outline: none;
+    border: none;
+}
+
+.search_icon_pos {
+    right: 3%;
+    top: 18%;
+    font-size: 25px;
+    color: #89928E;
+}
+
+.add_table_btn {
+    font-size:16px;
+    background-color: #B1CED4;
+    color: #2C3832;
+    padding: 19px 19px 19px 59px;
+    border-radius: 10px;
+    border: 0px;
+}
+.add_table_btn:hover{
+    background-color: #B1CED4;
+    color: #2C3832;
+}
+
+.circle_plus_icon {
+    left: 25%;
+}
+.header_time {
+    font-size: 15px;
+}

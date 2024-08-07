@@ -1,0 +1,20 @@
+.sidebar_links {
+    color: rgb(0, 0, 0,0.26);
+    font-size: 12px;
+}
+.sidebar_links >svg {
+    width: 28px;
+    height: 24px;
+}
+.aside_container {
+    max-width: 82px;
+}
+.sidebar_gap {
+    gap: 60px;
+}
+.btnActive {
+    color: #2E636E;
+}
+.titleActive {
+    color: #A2774C;
+}
