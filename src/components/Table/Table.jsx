@@ -4,12 +4,13 @@ import { faCircle, faClock, faTrashCan } from '@fortawesome/free-solid-svg-icons
 import { useDispatch, useSelector } from 'react-redux';
 import './Table.css'
 import { Button } from 'react-bootstrap';
-import { deleteItem } from '../../store/store';
+import { deleteItem, resetState } from '../../store/store';
 
 
 export default function Table() {
     const [time, setTime] = useState('');
     const cartItems = useSelector(state=> state.cards.cart);
+    const tableCount = useSelector(state => state.cards.TableCount)
     const dispatch = useDispatch();
     
 
@@ -19,10 +20,10 @@ export default function Table() {
         let minutes = date.getMinutes();
         hours = hours % 12;
         hours = hours ? hours : 12;
-        hours = hours <= 10 ? "0" + hours : hours;
+        hours = hours < 10 ? "0" + hours : hours;
         let ampm = hours >=13 ? 'AM' : 'PM';
         minutes = minutes < 10? '0' + minutes : minutes;
-        setTime(`${hours}:${minutes} ${ampm}`)
+        setTime(`${hours}:${minutes} ${ampm}`);
     },[cartItems])
 
   return (
@@ -32,8 +33,8 @@ export default function Table() {
             <div className='d-flex justify-content-between align-items-center gap-5'>
                 <h6 className='guess_table_col'>
                     <FontAwesomeIcon icon={faCircle} className='bg-black text-white' />
-                    <span className='mx-2'>TABLE</span>
-                    <span className='sub_guess_table_col'>1</span>
+                    <span className='mx-2'>TABLES</span>
+                    <span className='sub_guess_table_col'>{tableCount}</span>
                 </h6>
                 <h6>
                     <FontAwesomeIcon icon={faClock} className='mx-2'/>
@@ -74,13 +75,13 @@ export default function Table() {
                         cartItems.map(items=>
                         <tr key={items.id} className='border_secondary table_row_bg'>
                             <td className='text-center custom_padding'>
-                                {items.title}<br/>STARTER
+                                {items.title}<br/> {items.type}
                             </td>
                             <td className='text-center custom_padding'>$ {items.cost}</td>
                             <td className='text-center custom_padding'>{items.quantity}</td>
                             <td className='text-center custom_padding'><span>${items.amount}</span>
                                 <Button type='button' className='trash_button text-danger' onClick={() => dispatch(deleteItem(items.id))}>
-                                    <FontAwesomeIcon icon={faTrashCan} /></Button>
+                                <FontAwesomeIcon icon={faTrashCan} /></Button>
                             </td>
                         </tr>
                         )
@@ -88,7 +89,7 @@ export default function Table() {
                     </tbody>
                 </table>
             </div>
-            <Button type='button' className='w-100 table_cancel_order_btn'>CANCEL ORDER</Button>
+            <Button type='button' className='w-100 table_cancel_order_btn' onClick={() => dispatch(resetState())}>CANCEL ORDER</Button>
         </div>
     </section>
   )

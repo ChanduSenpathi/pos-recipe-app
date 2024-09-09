@@ -1,0 +1,46 @@
+.login_page_container {
+    background-image: url('/public/images/authimages/login-page.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.login_container {
+    flex-basis: 400px;
+    border-radius: 20px;
+    background-color: rgba(68, 53, 53, 0.5);
+    backdrop-filter: blur(5px);
+}
+.login_container > h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.label_field {
+    font-size: 15px;
+}
+.common_input_field {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 50px 10px 15px;
+}
+.show_password {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    font-size: 25px;
+}
+.eye_btn {
+    border: none;
+    background-color: transparent;
+}
+.login_submit_btn {
+    float: right;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(340deg, rgb(65, 26, 26), rgb(2, 74, 77) 50px);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}

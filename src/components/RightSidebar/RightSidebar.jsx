@@ -3,16 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCircle, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import './RightSidebar.css'
 import { Button } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { resetState } from '../../store/store'
 
 
 export default function RightSidebar() {
-    const cartItems = useSelector((state)=>state.cards.cart) ;
-    const totalAmount = useSelector((state)=>state.cards.total);
-    const totalDiscount = useSelector((state)=>state.cards.totalDiscount);
-    const serviceCharges = useSelector((state)=>state.cards.serviceCharges);
+    const {TableCount, serviceCharges, totalDiscount, total, cart} = useSelector((state)=>state.cards);
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     
   return (
     <section className='p-3 bg-white right_sidebar_container border_secondary d-flex flex-column justify-content-start' >
@@ -30,14 +29,14 @@ export default function RightSidebar() {
                 <h6 className='guess_table_col'>
                     <FontAwesomeIcon icon={faCircle} className='bg-black text-white'/>
                     <span className='mx-2'>TABLE</span> 
-                    <span className='sub_guess_table_col'>1</span>
+                    <span className='sub_guess_table_col'>{TableCount}</span>
                 </h6>                
             </div>
         </div>
         <div className="order_items_height">
-            {cartItems.length <= 0 ? (<h1 className="d-flex justify-content-center align-items-center h-100">There is No Items Ordered</h1>): (
+            {cart.length <= 0 ? (<h1 className="d-flex justify-content-center align-items-center h-100">There is No Items Ordered</h1>): (
                 <ul className="list-unstyle p-0">
-                    {cartItems.map(items=>
+                    {cart.map(items=>
                     <li key={items.id} className="order_list_items p-2 d-flex justify-content-between align-items-center my-3">
                         <img src={items.src} className ="order_items_image" alt={`order-image-${items.id}`}/>
                         <div>
@@ -57,7 +56,7 @@ export default function RightSidebar() {
             <div className='border_bottom_dotted pb-3'>
                 <div className='d-flex justify-content-between align-items-center order_subtotal_text'>
                     <span>SUBTOTAL</span>
-                    <span>${totalAmount}.00</span>
+                    <span>${total}.00</span>
                 </div>
                 <div className='d-flex justify-content-between align-items-center order_subtotal_text'>
                     <span>SERVICE CHARGE 10%</span>
@@ -70,8 +69,8 @@ export default function RightSidebar() {
                     <span>${totalDiscount.toFixed(2)}</span>
                 </h3>
                 <div className='d-flex justify-content-center align-items-center gap-3'>
-                    <Button type="button" className='cancel_order_btn'>CANCEL ORDER</Button>
-                    <Button type="button" className='send_order_btn' onClick={() => navigate('/payments')} >SEND ORDER</Button>
+                    <Button type="button" className='cancel_order_btn' onClick={() => dispatch(resetState())}>CANCEL ORDER</Button>
+                    <Button type="button" className='send_order_btn' onClick={() => navigate('/orders')} >SEND ORDER</Button>
                 </div>
             </div>
         </div>

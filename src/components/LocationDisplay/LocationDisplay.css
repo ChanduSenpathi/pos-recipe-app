@@ -1,0 +1,12 @@
+.get_location_btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(0, 0, 255,0.6);
+}
+.user_address {
+    font-size: 15px;
+}
+.user_address > svg {
+    color: red;
+}

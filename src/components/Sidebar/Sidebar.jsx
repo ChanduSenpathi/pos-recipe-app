@@ -8,33 +8,33 @@ const sidebarOptions = [
   {
     id: 1,
     title: 'HOME',
-    path: '/home',
+    path: '/',
     icon: faHome
   },
   {
     id: 2,
     title: 'MENU',
-    path: '/',
+    path: '/menu',
     icon: faBars
   },
   {
     id: 3,
-    title: 'PAYMENTS',
-    path: '/payments',
-    icon: faCreditCard
-  },
-  {
-    id: 4,
     title: 'ORDERS',
     path: '/orders',
     icon: faBorderAll
   },
   {
-    id: 5,
-    title: 'SETTINGS',
-    path: '/settings',
-    icon: faGear
+    id: 4,
+    title: 'PAYMENTS',
+    path: '/payments',
+    icon: faCreditCard
   },
+  // {
+  //   id: 5,
+  //   title: 'SETTINGS',
+  //   path: '/settings',
+  //   icon: faGear
+  // },
 ];
 
 export default function Sidebar() {
@@ -43,7 +43,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     const currentPath = location.pathname;
-    const activeTab = sidebarOptions.find(option => option.path === currentPath);
+    const activeTab = sidebarOptions.find(option => option.path === currentPath);    
     if (activeTab) {
       setTabs(activeTab.id);
     }

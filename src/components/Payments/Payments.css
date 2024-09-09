@@ -1,0 +1,113 @@
+.payments_max_width {
+    flex: 1 0 300px;
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+}
+.payments_toggle_btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+.payments_min_height {
+    min-height: 0;
+    overflow: hidden;
+}
+.add_upi_btn {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: orangered;
+}
+.toggle_form {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+.toggle_form > input {
+    font-size: 14px;
+}
+.formActive {
+    height: 35px;
+    transition: height .3s ease;
+}
+
+.payments_common_ul_container {
+    font-size: 15px;
+    height: 0px;
+    overflow: hidden;
+    transition: min-height .3s ease;
+}
+.mainIndexActive {
+    height: auto;
+    transition: min-height .3s ease;
+}
+
+.additional_form {
+    max-width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 10000;
+}
+
+.popup_form_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(215, 215, 215,0.5);
+    z-index: 100;
+}
+
+.account_labels {
+    font-size: 13px;
+}
+.account_labels + input, select {
+    font-size: 13px;
+}
+.formsubmit_control_btn {
+    font-size: 15px;
+    background-color: #F25822;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.bank_upi_images {
+    width: 55px;
+    height: 40px;
+}
+.bank_name_text {
+    font-size: 12px;
+    opacity: 0.7;
+}
+.payments_pay_btn {
+    color: white;
+    background-color: green;
+    border: none;
+    font-size: 30px;
+    height: 70px;
+    border-radius: 10px;
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.send_code_btn {
+    background-color: blue;
+    border: none;
+    font-size: 18px;
+    color: white;
+}
+.payment_btn_disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

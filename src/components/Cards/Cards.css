@@ -80,7 +80,6 @@
 .btn_disabled {
     background-color: #D9D9D9;
     color: #0F2125;
-    pointer-events: none;
     opacity: 0.5;
 }
 .gap_77 {

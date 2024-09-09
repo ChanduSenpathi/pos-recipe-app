@@ -8,6 +8,8 @@
 }
 .aside_container {
     max-width: 82px;
+    background-color: white;
+    z-index: 100000;
 }
 .sidebar_gap {
     gap: 60px;

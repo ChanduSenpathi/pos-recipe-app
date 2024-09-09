@@ -1,0 +1,45 @@
+
+.select_table_name {
+    font-size: 36px;
+}
+
+.home_section_table_btn {
+    background-color: transparent;
+    max-width: 203px;
+    height: 202px;
+    color: rgb(0, 0, 0,0.5);
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    filter: brightness(100%);
+}
+.home_section_table_btn > img {
+    width: 100%;
+}
+.table_name_span {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.booked {
+    filter: brightness(50%);
+}
+.floors_btns {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+.floorActive {
+    background-color: orange;
+}
+.table_count {
+    font-size: 18px;
+    font-weight: 500;
+}
+.table_section_bg {
+    background-image: url('https://media.istockphoto.com/id/1318680899/photo/light-natural-wood-background.jpg?s=612x612&w=0&k=20&c=VoIX6bzyASsNEWXZsIW_HMU-8z3rtvCiH-4ZSpUCFiU=');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

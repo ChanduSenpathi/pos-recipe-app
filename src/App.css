@@ -13,3 +13,12 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.app_container_bg {
+  background-color: rgb(249, 249, 249);
+  min-height: 100vh;
+}

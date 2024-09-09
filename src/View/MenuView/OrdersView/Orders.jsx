@@ -1,7 +1,7 @@
 import React from 'react'
-import Sidebar from '../Sidebar/Sidebar'
-import Table from '../Table/Table'
-import OrderSideBar from '../OrderSideBar/OrderSideBar'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Table from '../../components/Table/Table'
+import OrderSideBar from '../../components/OrderSideBar/OrderSideBar'
 
 export default function Orders() {
   return (

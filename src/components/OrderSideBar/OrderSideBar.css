@@ -6,10 +6,10 @@
     font-size: 16px;
 }
 .orders_common_btn_style, .orders_common_icons_style {
-    font-size: 20px;
+    font-size: 18px;
     background-color: #EAF0F0;
     color: #0F2125;
-    border: none;
+    border: 1px solid rgb(0, 0, 0, 0.3);
 }
 .orders_common_btn_style:hover, .orders_common_icons_style:hover {
     background-color: #EAF0F0;
@@ -17,7 +17,6 @@
 }
 .orders_common_disabled {
     background-color: #FAFAFA;
-    pointer-events: none;
     color: rgb(0, 0, 0, 0.5);
 }
 .orders_common_icons_style {
