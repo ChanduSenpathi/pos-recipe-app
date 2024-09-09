@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/pos-recipe-app/static/css/main.90387bea.css",
-    "main.js": "/pos-recipe-app/static/js/main.a564d9a7.js",
-    "static/js/453.6a12ce56.chunk.js": "/pos-recipe-app/static/js/453.6a12ce56.chunk.js",
-    "index.html": "/pos-recipe-app/index.html",
-    "main.90387bea.css.map": "/pos-recipe-app/static/css/main.90387bea.css.map",
-    "main.a564d9a7.js.map": "/pos-recipe-app/static/js/main.a564d9a7.js.map",
-    "453.6a12ce56.chunk.js.map": "/pos-recipe-app/static/js/453.6a12ce56.chunk.js.map"
+    "main.css": "/static/css/main.892fd14a.css",
+    "main.js": "/static/js/main.f7724c43.js",
+    "static/js/453.6a12ce56.chunk.js": "/static/js/453.6a12ce56.chunk.js",
+    "static/media/login-page.jpg": "/static/media/login-page.0369c290b56c1ef84921.jpg",
+    "index.html": "/index.html",
+    "main.892fd14a.css.map": "/static/css/main.892fd14a.css.map",
+    "main.f7724c43.js.map": "/static/js/main.f7724c43.js.map",
+    "453.6a12ce56.chunk.js.map": "/static/js/453.6a12ce56.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90387bea.css",
-    "static/js/main.a564d9a7.js"
+    "static/css/main.892fd14a.css",
+    "static/js/main.f7724c43.js"
   ]
 }
